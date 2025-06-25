@@ -1,22 +1,11 @@
 // use an integer for version numbers
-version = 35
-
-android {
-    buildFeatures {
-        buildConfig = true
-    }
-    defaultConfig {
-        val properties = Properties()
-        properties.load(project.rootProject.file("local.properties").inputStream())
-        buildConfigField("String", "ZSHOW_API", "\"${properties.getProperty("ZSHOW_API")}\"")
-    }
-}
+version = 4
 
 cloudstream {
     language = "id"
     // All of these properties are optional, you can safely remove them
 
-    description = "Includes: DutaMovie, Ngefilm, Nodrakorid, Multiplex, Pusatfilm"
+    description = "Includes:  Ngefilm, Nodrakorid, Gomov, Pusatfilm"
     authors = listOf("Hexated", "TeKuma25")
 
     /**
