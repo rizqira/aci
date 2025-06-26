@@ -1,4 +1,4 @@
-package com.Netflixmirrorn.entities
+package com.Netflixmirror.entities
 
 data class PostData(
     val desc: String?,
@@ -15,7 +15,4 @@ data class PostData(
     val cast: String?,
     val match: String?,
     val runtime: String?,
-    val suggest: List<Id>?,
 )
-
-data class Id(val id: String)

@@ -1,3 +1,3 @@
-package com.Netflixmirrorn.entities
+package com.Netflixmirror.entities
 
 class PlayList : ArrayList<PlayListItem>()

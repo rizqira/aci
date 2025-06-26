@@ -1,4 +1,4 @@
-package com.Netflixmirrorn.entities
+package com.Netflixmirror.entities
 
 data class Season(
     val ep: String,

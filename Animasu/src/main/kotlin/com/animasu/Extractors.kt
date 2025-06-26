@@ -28,7 +28,7 @@ class Archivd : ExtractorApi() {
         val json = res.select("div#app").attr("data-page")
         val video = AppUtils.tryParseJson<Sources>(json)?.props?.datas?.data?.link?.media
         callback.invoke(
-                ExtractorLink(
+                newExtractorLink(
                         this.name,
                         this.name,
                         video ?: return,
